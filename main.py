@@ -1,10 +1,7 @@
-from Cpf import Cpf
-from validate_docbr import CPF
+from cpf_cnpj import Documento
+from validate_docbr import CNPJ
 
-cpf_um = Cpf("52384705504")
+documento = Documento.cria_documento("58873929087")
 
-print(cpf_um)
-
-
-
+print(documento)
 
