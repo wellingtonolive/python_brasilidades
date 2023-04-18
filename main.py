@@ -1,7 +1,9 @@
-from cpf_cnpj import Documento
-from validate_docbr import CNPJ
+from acesso_cep import BuscaEndereco;
 
-documento = Documento.cria_documento("58873929087")
+cep = "03945060"
 
-print(documento)
+obj_cep = BuscaEndereco(cep)
 
+bairro, cidade, uf = obj_cep.acessa_via_cep()
+
+print(bairro, cidade, uf)
